@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapi s.com/css?family=Poppins:wght@400;50 0;700;8006display=swap');
+
+/*базовые настройки*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Popins", sans-serif; /* шрифт */
+    font-weight: 500;   
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none; /*Убираем подчеркивание ссылок*/
+}
+
+img {
+    max-width: 100%;
+}
+
+.wraper {
+    background: 
+    radial-gradient(circle at 90% 110% /*Координаты расположения*/, #1e1e1e /*цвет*/ 35% /*радиус*/, transparent 30%  /*% для сглаживания*/),
+    radial-gradient(circle at 70% 90%, #1D6093 55%, transparent 0%),
+    linear-gradient(180deg,rgb(30, 98, 150) 0%, rgb(36, 147, 231) 100%);
+    display: flex; /*включаем шнягу для управления контейнером*/
+    flex-direction: column; /*делаем так чтобы объекты стояли друг за другом, а не вряд как текст по дефолту*/
+    min-height: 100vh;
+    
+}
+
+.container {
+    max-width: 1800px; /*края по горизонтали*/
+    margin: 50px; /*Края по верт*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20 px;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight:900;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header nav ul li {
+    text-decoration: none;
+    display: inline-block; /*каждый элемент строчный блок*/
+    margin-right: 50px;
+}
+
+header nav ul li a { 
+    color: #fff;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 700px;
+    
+}
+
+h1 {
+    font-size: 66px;
+    padding-top: 160px;
+    font-weight:700;
+}
+
+h4 {
+    font-size: 40px;
+    padding-top: 100px;
+    font-weight:700;
+}
+
+header {
+    position: fixed;   /* Фиксирует меню на экране */
+    top: 0;            /* Прижимает к самому верху */
+    left: 0;
+    width: 100%;       /* Растягивает на всю ширину */
+    z-index: 1000;     /* Чтобы меню всегда было поверх контента */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон, чтобы текст под ним было видно */
+    backdrop-filter: blur(10px);    /* Эффект размытия стекла (очень стильно) */
+}
+
+html {
+    scroll-behavior: smooth; /* Это щняга строчка для плавного скролла */
+}
+
+.square {
+    position: absolute;
+    z-index: -1; /* Уводит квадрат на слой ниже текста */
+
+    top: 190px;
+    left: 100px;
+    
+    width: 100px;
+    height: 100px;
+    background-color: #1e1e1e;
+    border-radius: 10px 50px;
+}
